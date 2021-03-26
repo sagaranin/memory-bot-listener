@@ -8,5 +8,5 @@ WORKDIR /memory-bot-listener
 RUN mvn clean package
 
 FROM openjdk:8-alpine
-COPY --from=builder /memory-bot-listener/target/memory-bot-listener-1.0-SNAPSHOT-jar-with-dependencies.jar /app.jar
+COPY --from=builder /memory-bot-listener/target/memory-bot-listener-1.0-SNAPSHOT.jar /app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
