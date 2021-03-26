@@ -1,8 +1,6 @@
 bot:
   name: ${BOT_NAME}
   token: ${BOT_TOKEN}
-  targetTopic: "requests"
-  sourceTopic: "responses"
 kafka:
   bootstrap: "confluent.larnerweb.ru:9092"
   schemaRegistryUrl: "http://confluent.larnerweb.ru:8081"
